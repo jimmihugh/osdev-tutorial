@@ -1,1 +1,3 @@
-start: HLT
+global start
+start:	CLI
+		HLT
