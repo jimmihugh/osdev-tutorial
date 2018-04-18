@@ -1,4 +1,8 @@
-void kmain (void)
+#include "heap.h"
+
+int kmain (void);
+
+int kmain (void)
 {
-	return;
+	return 0;
 }
