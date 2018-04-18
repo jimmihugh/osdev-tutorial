@@ -3,9 +3,10 @@ ENTRY(start)
 phys = 0x00100000;
 SECTIONS
 {
-  .start phys : AT(phys) {
+  .mboot phys : AT(phys) {
     init = .;
-    *(.start)
+    *(.mboot)
+    . = ALIGN (16);
   }
   .text : AT(phys + (code - init)) {
     code = .;
